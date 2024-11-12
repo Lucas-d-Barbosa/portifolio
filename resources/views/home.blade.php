@@ -1,4 +1,4 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -20,4 +20,10 @@
         </div>
     </div>
 </div>
+@endsection --}}
+
+@extends('components.basico')
+@section('title', 'Home')
+@section('conteudo')
+    <h2>Olá</h2>
 @endsection
