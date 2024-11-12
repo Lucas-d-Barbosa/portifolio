@@ -26,7 +26,7 @@
 @section('title', 'Home')
 @section('conteudo')
 <main class="flex-grow-1">
-    <section class="p-4 row d-flex align-items-center section-container w-100">
+    <section class="p-4 row d-flex align-items-center section-container w-100 bg-body-secondary">
         <div class="col-6 d-flex justify-content-center" style="text-align: center">
             <div class="col-7">
                 <h2 class="display-6">
@@ -43,7 +43,7 @@
             </div>
         </div>
     </section>
-    <section class="p-4 row d-flex flex-column align-items-center justify-content-center g-4 section-container w-100 bg-body-secondary">
+    <section class="p-4 row d-flex flex-column align-items-center justify-content-center g-4 section-container w-100">
         <h3 class="display-6" style="text-align: center">Um pouco sobre mim</h3>
         <div class="col-8 d-flex justify-content-center p-2">
             <p class="text-dark fs-4">Sou desenvolvedor Back-end e tenho bastante experiência em tecnologias como PHP, Laravel e tenho ótimos conhecimentos em Java. Sou extremamente dedicado ao desenvolvimento de aplicações web utilizando técnicas modernas. Apesar de ter preferência pela programação Back-end, também conheço tecnologias Front-end como HTML e Bootstrap 5 e Vue.js.</p>
