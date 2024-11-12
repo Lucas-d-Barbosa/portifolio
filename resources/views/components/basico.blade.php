@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/basico.css')}}">
     <title>@yield('title')</title>
 </head>
 <body>
     @include('components._partials.topo')
-    <div class="p-2">
-        @yield('conteudo')
-    </div>
+    @yield('conteudo')
     @include('components._partials.footer')
     <script src="{{asset('js/app.js')}}"></script>
 </body>
