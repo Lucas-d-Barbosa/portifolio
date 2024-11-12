@@ -1,9 +1,38 @@
-html{
+/* html{
     width: 100%;
 }
 body{
     width: 100%;
+    padding-bottom: 100px;
+} */
+
+
+body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
+main {
+    flex: 1;
+}
+
+footer {
+    position: relative;
+}
+
 .section-container{
-    height: 68vh;
+    height: 90vh;
 }
+.image-container {
+    width: 400px; /* Defina o tamanho desejado da div */
+    height: 400px; /* Defina a altura desejada da div */
+    overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse a div */
+    position: relative;
+    border-radius: 50%;
+    border: 4px solid;
+  }
+  
+.responsive-image{
+    width: 100%; 
+}  
