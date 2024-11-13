@@ -9,8 +9,11 @@ body{
 
 body, html {
     height: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 main {
@@ -21,18 +24,97 @@ footer {
     position: relative;
 }
 
-.section-container{
-    height: 90vh;
-}
-.image-container {
-    width: 400px; /* Defina o tamanho desejado da div */
-    height: 400px; /* Defina a altura desejada da div */
-    overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse a div */
-    position: relative;
-    border-radius: 50%;
-    border: 4px solid;
-  }
-  
-.responsive-image{
+.section-container {
+    height: 92vh;
     width: 100%; 
-}  
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.image-container {
+    width: 50vw; 
+    height: 50vw; 
+    max-width: 400px; 
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%; 
+    border: 4px solid;
+}
+
+.responsive-image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: top; /* Move o foco da imagem para o topo */
+}
+
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h2 {
+    font-size: 2rem; /* Tamanho padrão */
+}
+
+p {
+    font-size: 1.25rem; 
+    text-align: justify;
+}
+
+@media (min-width: 576px) {
+    h2 {
+        font-size: 2.5rem; 
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 3rem; 
+    }
+    p {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 992px) {
+    h2 {
+        font-size: 3.5rem; 
+    }
+    p {
+        font-size: 2rem;
+    }
+}
+.habilidade-item {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 5px 0; 
+}
+
+
+
+.badge {
+    width: 100%; 
+    text-align: center; 
+    font-size: 1.25rem; 
+    padding: 10px 0; 
+}
+
+@media (max-width: 768px) {
+    .habilidade-item {
+        padding: 10px 0; 
+    }
+}
+
+
+@media (min-width: 768px) {
+    .row-b {
+        gap: 20px; 
+    }
+}
