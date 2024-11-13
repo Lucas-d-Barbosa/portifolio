@@ -108,6 +108,10 @@ p {
     padding: 10px 0; 
 }
 
+.badge:hover{
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .habilidade-item {
         padding: 10px 0; 
@@ -135,4 +139,36 @@ p {
     font-size: 0.9rem;
     color: #555; 
     line-height: 1.6;
+}
+
+footer .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .col-12 {
+    flex: 1 0 100%;
+}
+
+footer .col-md-3 {
+    flex: 1 0 24%; 
+}
+
+footer .contato-icone {
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .contato-icone:hover {
+    transform: scale(1.2); 
+    color: #ffdf00; 
+}
+
+footer .mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+footer .text-white {
+    text-decoration: none;
 }
